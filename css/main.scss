@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+
+}
+
+.navbar {
+    background: #F3EDE7;
+    padding: 2rem;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 999;
+
+    .container {
+        display: flex;
+        place-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+        .logo {
+            text-decoration: none;
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: black;
+            
+        }
+    
+        nav {
+            margin-top: 1.3rem;
+    
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+    
+                li {
+                    margin: 0 4rem;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: #333333ba;
+                        text-align: center;
+                        transition: all .4s;
+
+                        &:hover {
+                            color: #0c0c0c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 2rem 15rem;
+}
+
+.hero {
+    position: relative;
+    top: 10vh;
+    height: 100vh;
+    background-image: linear-gradient(to left, 
+         rgba(0, 0, 0, 0.529), 
+         rgba(0, 0, 0, 0.529)),
+     url("../images/zahrin-lukman-VSNoQdimlQQ-unsplash\ 2.png");
+
+    background-size: cover;
+    background-position: top;
+    background-color: #572302;
+
+    .cta {
+        width: 48vw;
+        position: absolute;
+        top: 27%;
+
+        .heading {
+            font-weight: 700;
+            font-size: 6rem;
+            color: #FFFFFF;
+            line-height: 1.5;
+        }
+
+        .btn {
+            margin-top: 5.5rem;
+            padding: 15px 45px;
+            font-size: 1.7rem;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: all .3s;
+        }
+
+        .default {
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+
+            &:hover {
+                border: 2px solid #7B9A11;
+                background-color: #7B9A11;
+            }
+        }
+    }
+}

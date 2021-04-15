@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  background: #F3EDE7;
+  padding: 2rem;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar .container .logo {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: black;
+}
+
+.navbar .container nav {
+  margin-top: 1.3rem;
+}
+
+.navbar .container nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav ul li {
+  margin: 0 4rem;
+}
+
+.navbar .container nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333ba;
+  text-align: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.navbar .container nav ul li a:hover {
+  color: #0c0c0c;
+}
+
+section {
+  padding: 2rem 15rem;
+}
+
+.hero {
+  position: relative;
+  top: 10vh;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.529)), to(rgba(0, 0, 0, 0.529))), url("../images/zahrin-lukman-VSNoQdimlQQ-unsplash 2.png");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.529)), url("../images/zahrin-lukman-VSNoQdimlQQ-unsplash 2.png");
+  background-size: cover;
+  background-position: top;
+  background-color: #572302;
+}
+
+.hero .cta {
+  width: 48vw;
+  position: absolute;
+  top: 27%;
+}
+
+.hero .cta .heading {
+  font-weight: 700;
+  font-size: 6rem;
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
+.hero .cta .btn {
+  margin-top: 5.5rem;
+  padding: 15px 45px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 7px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.hero .cta .default {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.hero .cta .default:hover {
+  border: 2px solid #7B9A11;
+  background-color: #7B9A11;
+}
+/*# sourceMappingURL=main.css.map */
