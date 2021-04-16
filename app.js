@@ -92,3 +92,26 @@ const slider = function () {
     }
     prevScrollpos = currentScrollPos;
   }
+
+const bumbuBiang = document.getElementById('biang');
+const bumbuGulai = document.getElementById('gulai');
+const bumbuRendang = document.getElementById('rendang');
+const popup = document.getElementById('popup');
+const outliner = document.getElementById('');
+const exitButton = document.getElementById('exitBtn')
+
+bumbuBiang.addEventListener('click', () => {
+    popup.classList.remove('popup')
+});
+
+bumbuGulai.addEventListener('click', () => {
+    popup.classList.remove('popup')
+});
+
+bumbuRendang.addEventListener('click', () => {
+    popup.classList.remove('popup')
+});
+
+exitButton.addEventListener('click', () => {
+    popup.classList.add('popup');
+})
