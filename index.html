@@ -11,9 +11,9 @@
 </head>
 <body>
     
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="container">
-            <a class="logo" href="#">Bumbu Eyang</a>
+            <a class="logo" href="#home">Bumbu Eyang</a>
 
             <nav>
                 <ul class="primary-nav">
@@ -26,12 +26,85 @@
         </div>
     </div>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="cta">
             <h1 class="heading">Bumbu yang sehat dan kaya akan rempah</h1>
             <button class="btn default">LIHAT PRODUK</button>
         </div>
+        <a href="#">
+            <img class="scroll-icon" src="./images/scroll-down.svg" alt="scroll down">
+        </a>
     </section>
 
+    <section class="product">
+        <div class="container">
+            <div class="intro">
+                <h2>Produk Kami</h2>
+                <p>
+                    Kami menjual tiga macam bumbu yang dibuat tanpa MSG dan menggunakan rempah berkualitas.
+                </p>
+            </div>
+            <div class="gallery">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="./images/WhatsApp Image 2021-03-13 at 9.33.44 PM.jpeg" alt="foto bumbu gulai">
+                        <h4>Bumbu Gulai</h4>
+                        <button class="btn-card">Beli</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/WhatsApp Image 2021-03-13 at 9.34.00 PM.jpeg" alt="foto bumbu gulai">
+                        <h4>Bumbu Rendang</h4>
+                        <button class="btn-card">Beli</button>
+                    </div>
+                    <div class="card">
+                        <img src="./images/WhatsApp Image 2021-03-13 at 9.33.44 PM.jpeg" alt="foto bumbu gulai">
+                        <h4>Bumbu Biang</h4>
+                        <button class="btn-card">Beli</button>
+                    </div>
+                </div>
+            </div>
+            <div class="strip"></div>
+        </div>
+    </section>
+
+    <section class="section" id="section--3">
+        <div class="section__title section__title--testimonials">
+          <h3 class="section__header">
+            Apa Kata Mereka?
+          </h3>
+        </div>
+  
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <blockquote class="testimonial__text">
+                “Yang ajaibnya adalah.. si adek yang seumur-umur gak doyan rendang sekarang bisa makan sampai dua piring! Alhamdulillah banget kan.. secara si adek abis sakit jadi makannya lagi agak susah.”
+              </blockquote>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <div class="testimonial">
+              <blockquote class="testimonial__text">
+                “Yang ajaibnya adalah.. si adek yang seumur-umur gak doyan rendang sekarang bisa makan sampai dua piring! Alhamdulillah banget kan.. secara si adek abis sakit jadi makannya lagi agak susah.”
+              </blockquote>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <div class="testimonial">
+              <blockquote class="testimonial__text">
+                “Yang ajaibnya adalah.. si adek yang seumur-umur gak doyan rendang sekarang bisa makan sampai dua piring! Alhamdulillah banget kan.. secara si adek abis sakit jadi makannya lagi agak susah.”
+              </blockquote>
+            </div>
+          </div>
+  
+          <button class="slider__btn slider__btn--left"><img src="./images/left-arrow.svg" alt="slider left button"></button>
+          <button class="slider__btn slider__btn--right"><img src="./images/right-arrow.svg" alt="slider right button"></button>
+          <div class="dots"></div>
+        </div>
+      </section>    
+
+    <script src="./app.js"></script>
 </body>
 </html>
