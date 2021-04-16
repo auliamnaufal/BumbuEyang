@@ -31,10 +31,14 @@ body {
     z-index: 999;
     top: 0;
     transition: top .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .container {
         display: flex;
-        place-content: space-between;
+        justify-content: space-between;
+        align-items: center;
         width: 80%;
         margin: 0 auto;
 
@@ -77,6 +81,7 @@ body {
 
 section {
     padding: 2rem 15rem;
+
 }
 
 .hero {
@@ -133,11 +138,11 @@ section {
 }
 
 .product {
-    padding: 15rem 0 50rem;
+    padding: 15rem 0 44rem;
     background-color: #fff;
 
     .container {
-        width: 90rem;
+        width: 86rem;
         height: 41rem;
         margin: 0 auto;
 
@@ -164,23 +169,24 @@ section {
             margin: 0 auto;
     
             .product-card {
-                margin-top: 5rem;
+                margin-top: 7rem;
                 display: flex;
                 justify-content: space-between;
     
                 .card {
-                    width: 25rem;
-                    height: 42rem;
+                    height: 39rem;
+                    width: fit-content;
                     overflow: hidden;
                     border-radius: 5px;
-                    box-shadow: .5rem .5rem 2rem rgba($color: #000000, $alpha: 0.4);
+                    box-shadow: 0 0 .8rem rgba($color: #000000, $alpha: 0.4);
                     display: flex;
                     flex-direction: column;
     
                     img {
-                        width: 28rem;
-                        height: 30rem;
-                        object-position: -20px -30px;
+                        transform: scale(1.2);
+                        width: 25rem;
+                        height: 28rem;
+                        object-position: -20px -46px;
                     }
     
                     h4 {
@@ -188,7 +194,7 @@ section {
                         font-weight: 700;
                         font-size: 2.4rem;
                         color: #000;
-                        margin: -1rem auto;
+                        margin: 0 auto -1rem;
                     }
     
                     .btn-card {
@@ -229,7 +235,7 @@ section {
 .slider {
     max-width: 100rem;
     height: 50rem;
-    margin: -5rem auto 5rem;
+    margin: -10rem auto 5rem;
     position: relative;
   
     /* IN THE END */
@@ -343,3 +349,139 @@ section {
       text-align: center;
     }
   }
+
+.resep {
+  padding: 40rem 0;
+   background-image: linear-gradient(to left, 
+       rgba(0, 0, 0, 0.529), 
+       rgba(0, 0, 0, 0.529)),
+   url("../images/emy-XoByiBymX20-unsplash\ 1.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .container {
+    width: 50rem;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+      
+
+    .header {
+      font-size: 5rem;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      color: #fff;
+    }
+
+    .text {
+      font-weight: 200;
+      font-size: 1.8rem;
+      line-height: 1.3;
+      text-align: center;
+      color: #fff;
+      margin: 4rem 0 7rem;
+    }
+
+    .btn-resep {
+      padding: 15px 45px;
+      font-size: 1.7rem;
+      cursor: pointer;
+      border-radius: 7px;
+      transition: all .3s;
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      outline: none;
+      margin: 0 10rem 0;
+
+      &:hover {
+          border: 2px solid #7B9A11;
+            background-color: #7B9A11;
+      }
+    }
+  }
+}
+
+.pembelian {
+  padding: 35rem 0;
+  background-color: #fff;
+  position: relative;
+  
+  .container {
+    width: 45%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      font-size: 4rem;
+      font-weight: 800;
+      text-align: center;
+      color: #000;
+      margin-bottom: 3rem;
+    }
+
+    .text {
+      font-weight: 400;
+      font-size: 2rem;
+      color: #909090;
+      text-align: center;
+      margin-bottom: 7rem;
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .btn-pembelian {
+      justify-self: center;
+      font-size: 1.5rem;
+      padding: 1.2rem 3.8rem;
+      margin: 5rem auto;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all .3s;
+      color: #fff;
+      border: none;
+      background-color: #D02804;
+      outline: none;
+
+      &:hover {
+          background-color: #b12000;
+          transform: scale(1.05);
+      }
+    }
+                        
+
+  }
+}
+
+footer {
+  padding: 3rem 0;
+  background-color: #F3EDE7;
+  position: relative;
+
+  h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
