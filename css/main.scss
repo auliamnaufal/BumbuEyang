@@ -143,7 +143,7 @@ section {
 }
 
 .product {
-    padding: 15rem 0 44rem;
+    padding: 5rem 0 44rem;
     background-color: #fff;
 
     .container {
@@ -575,6 +575,11 @@ footer {
 
         a {
           color: rgb(225, 101, 35);
+          transition: color .2s;
+
+          &:hover {
+            color: rgb(187, 83, 26);
+          }
         }
       }
     }

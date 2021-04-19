@@ -158,7 +158,7 @@ section {
 }
 
 .product {
-  padding: 15rem 0 44rem;
+  padding: 5rem 0 44rem;
   background-color: #fff;
 }
 
@@ -658,5 +658,11 @@ footer h2 {
 
 .pembelian-popup .card .container .text a {
   color: #e16523;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.pembelian-popup .card .container .text a:hover {
+  color: #bb531a;
 }
 /*# sourceMappingURL=main.css.map */

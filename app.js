@@ -109,7 +109,7 @@ bumbuGulai.addEventListener('click', () => {
 });
 
 bumbuRendang.addEventListener('click', () => {
-    popup.classList.remove('popup')
+    popup.classList.remove('popup')         
 });
 
 exitButton.addEventListener('click', () => {
