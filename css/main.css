@@ -670,4 +670,90 @@ footer h2 {
 .pembelian-popup .card .container .text a:hover {
   color: #bb531a;
 }
+
+.contact-header {
+  position: relative;
+  height: 70vh;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.529)), to(rgba(0, 0, 0, 0.529))), url("../../images/emy-XoByiBymX20-unsplash 1.png");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.529)), url("../../images/emy-XoByiBymX20-unsplash 1.png");
+  background-size: 140rem;
+  background-position: top;
+  background-color: #572302;
+}
+
+.contact-header .heading {
+  font-weight: 700;
+  font-size: 5.6rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact-body {
+  margin-top: 5rem;
+  padding: 22rem 0;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.contact-body .container {
+  height: 60%;
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15rem;
+}
+
+.contact-body .container .contact-cara {
+  padding: 4rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.12);
+}
+
+.contact-body .container .contact-cara p {
+  margin-top: 4rem;
+  color: #909090;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.contact-body .container .contact-cara h6 {
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: #000;
+}
+
+.contact-body .container .contact-cara .btn-card {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 1.5rem;
+  padding: 1.2rem 3.8rem;
+  margin: 3rem auto;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  border: none;
+  background-color: #d02804;
+  outline: none;
+}
+
+.contact-body .container .contact-cara .btn-card:hover {
+  background-color: #b12000;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 /*# sourceMappingURL=main.css.map */
