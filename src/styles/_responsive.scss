@@ -61,17 +61,14 @@
 	}
 
 	.hero {
-		height: 55vh;
+		height: 60vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	
 		.cta {
-			width: 70%;
-			margin: 13rem 0;
-	
 			.heading {
-				font-weight: 700;
-				font-size: 6rem;
-				color: #ffffff;
-				line-height: 1.5;
+				text-align: center;
 			}
 	
 			.btn, 
