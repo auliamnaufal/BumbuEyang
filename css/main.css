@@ -545,18 +545,13 @@ section {
 footer {
   padding: 3rem 0;
   background-color: #f3ede7;
-  position: relative;
 }
 
 footer h2 {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   color: black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .popup {

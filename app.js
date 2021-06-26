@@ -96,22 +96,37 @@ window.onscroll = function () {
 const bumbuBiang = document.getElementById("biang");
 const bumbuGulai = document.getElementById("gulai");
 const bumbuRendang = document.getElementById("rendang");
+const pelajariBtn = document.getElementById("pelajari");
 const popup = document.getElementById("popup");
-const outliner = document.getElementById("");
 const exitButton = document.getElementById("exitBtn");
+const mainElement = document.querySelector("main");
 
-bumbuBiang.addEventListener("click", () => {
+bumbuBiang.addEventListener("click", (e) => {
   popup.classList.remove("popup");
+  e.stopPropagation();
 });
 
-bumbuGulai.addEventListener("click", () => {
+bumbuGulai.addEventListener("click", (e) => {
   popup.classList.remove("popup");
+  e.stopPropagation();
 });
 
-bumbuRendang.addEventListener("click", () => {
+bumbuRendang.addEventListener("click", (e) => {
   popup.classList.remove("popup");
+  e.stopPropagation();
 });
 
-exitButton.addEventListener("click", () => {
+exitButton.addEventListener("click", (e) => {
   popup.classList.add("popup");
+  e.stopPropagation();
+});
+
+pelajariBtn.addEventListener("click", (e) => {
+  popup.classList.add("popup");
+  e.stopPropagation();
+});
+
+mainElement.addEventListener("click", (e) => {
+  popup.classList.add("popup");
+  e.stopPropagation();
 });
