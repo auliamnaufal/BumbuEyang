@@ -1,81 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-}
-
-.navbar {
-  background: #f3ede7;
-  padding: 2rem;
-  // position: fixed;
-  width: 100%;
-  height: 10vh;
-  z-index: 999;
-  top: 0;
-  transition: top 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-
-    .logo {
-      text-decoration: none;
-      font-family: "Dancing Script", cursive;
-      font-size: 3rem;
-      color: black;
-    }
-
-    nav {
-      align-self: center;
-
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-
-        li {
-          margin: 0 4rem;
-
-          a {
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #333333ba;
-            text-align: center;
-            transition: all 0.4s;
-
-            &:hover {
-              color: #0c0c0c;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 section {
   padding: 2rem 15rem;
 }
@@ -87,16 +9,15 @@ section {
       rgba(0, 0, 0, 0.529),
       rgba(0, 0, 0, 0.529)
     ),
-    url("../images/zahrin-lukman-VSNoQdimlQQ-unsplash\ 2.png");
+    url("./public/images/hero_img-2.png");
 
   background-size: cover;
   background-position: top;
   background-color: #572302;
 
   .cta {
-    width: 48vw;
-    position: absolute;
-    top: 35%;
+    width: 70%;
+    margin: 13rem 0;
 
     .heading {
       font-weight: 700;
@@ -134,7 +55,7 @@ section {
 
   .scroll-icon {
     position: absolute;
-    top: 103%;
+    top: 70rem;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -358,7 +279,7 @@ section {
       rgba(0, 0, 0, 0.529),
       rgba(0, 0, 0, 0.529)
     ),
-    url("../images/emy-XoByiBymX20-unsplash\ 1.png");
+    url("./public/images/hero_img-1.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
