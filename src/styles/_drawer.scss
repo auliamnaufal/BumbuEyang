@@ -11,27 +11,30 @@
 		white-space: nowrap;
 	}
 
-	.bar1, .bar2, .bar3 {
-		width: 35px;
-		height: 3.5px;
-		background-color: #333;
-		margin: 8px 0;
-		border-radius: 5px;
-		transition: 0.4s;
-	}
+		.menu {
+			.bar1, .bar2, .bar3 {
+				width: 50px;
+				height: 4.5px;
+				background-color: #333;
+				margin: 13px 0;
+				border-radius: 5px;
+				transition: 0.4s;
+			}
+		}
 }
+
 
 .change {
 	.bar1 {
 		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-		transform: rotate(-45deg) translate(-8px, 9px);
+		transform: rotate(-45deg) translate(-13px, 9px);
 	}
 	
 	.bar2 {opacity: 0;}
 	
 	.bar3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-		transform: rotate(45deg) translate(-7px, -10px);
+		transform: rotate(45deg) translate(-13px, -11px);
 	
 	}
 }
