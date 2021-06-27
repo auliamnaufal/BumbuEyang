@@ -17,6 +17,7 @@ section {
 
   .cta {
     min-width: 44rem;
+    max-width: 100rem;
     margin: 13rem 0;
 
     .heading {
@@ -103,7 +104,8 @@ section {
         margin-top: 7rem;
         display: grid;
         grid-template-columns: repeat(3, 25rem);
-        grid-gap: 5rem;
+        justify-content: center;
+        grid-gap: 4rem;
 
         .card {
           height: 39rem;
@@ -274,15 +276,15 @@ section {
 }
 
 .resep {
-  padding: 40rem 0;
+  padding: 25rem;
+  height: 70rem;
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.529),
       rgba(0, 0, 0, 0.529)
     ),
     url("./public/images/hero_img-1.png");
-  background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 
@@ -339,7 +341,7 @@ section {
   position: relative;
 
   .container {
-    width: 40%;
+    max-width: 58rem;
     height: fit-content;
     position: absolute;
     top: 50%;
