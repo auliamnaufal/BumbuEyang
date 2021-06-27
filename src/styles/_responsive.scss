@@ -7,7 +7,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 2rem 6rem;
+		padding: 2rem 3rem;
 
 		.logo {
 			font-size: 4rem;
@@ -131,10 +131,127 @@
 		}
 	}
 
+	.slider {
+		max-width: 100rem;
+		height: 50rem;
+		margin: -10rem auto 5rem;
+		position: relative;
+	
+		/* IN THE END */
+		overflow: hidden;
+	
+		.slide {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 50rem;
+		
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		
+			/* THIS creates the animation! */
+			transition: transform 1s;
+	
+			/* TESTIMONIALS */
+			.testimonial {
+				width: 70%;
+				position: relative;
+	
+				.testimonial__text {
+					font-size: 2.4rem;
+				}
+			}
+	
+		}
+	
+		.slider__btn {
+			position: absolute;
+			top: 50%;
+			z-index: 10;
+		
+			border: none;
+			background: rgba(255, 255, 255, 0.7);
+			font-family: inherit;
+			color: #333;
+			border-radius: 50%;
+			height: 5.5rem;
+			width: 5.5rem;
+			font-size: 3.25rem;
+			cursor: pointer;
+	
+			&--left {
+				left: 5%;
+				transform: translate(-50%, -50%);
+				border: none;
+				outline: none;
+			}
+			
+			&--right {
+				right: 5%;
+				transform: translate(50%, -50%);
+				border: none;
+				outline: none;
+			}
+		}
+	}
+	
+	.dots {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+	
+		.dots__dot {
+			border: none;
+			background-color: #c4c4c4;
+			opacity: 0.7;
+			height: 1.5rem;
+			width: 1.5rem;
+			border-radius: 50%;
+			margin-right: 1.75rem;
+			cursor: pointer;
+			outline: none;
+			transition: all 0.5s;
+		
+			&:last-child {
+				margin: 0;
+			}
+			
+			&--active {
+				background-color: #d02804;
+				opacity: 1;
+			}
+		}
+	}
+
+	.section__title--testimonials {
+		.section__header {
+			margin-bottom: 3rem;
+		}
+	}
+
+	.resep {
+		.container {
+	
+			.text {
+				display: none;
+			}
+	
+			.btn-resep {
+				margin-top: 5rem;
+				border: 2px solid #7b9a11;
+				background-color: #7b9a11;
+	
+			}
+		}
+	}
+
+
 	.pembelian {
 		padding: 5rem 0;
 		height: 80rem;
-		background-color: #fff;
 		display: grid;
 		place-content: center;
 	
@@ -142,30 +259,9 @@
 			width: 70%;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-	
-			.header {
-				font-size: 4rem;
-				font-weight: 800;
-				text-align: center;
-				color: #000;
-				margin-bottom: 6rem;
-			}
 	
 			.text {
-				font-weight: 400;
-				font-size: 2.3rem;
-				color: #909090;
-				text-align: center;
-				margin-bottom: 7.5rem;
-			}
-	
-			.logos {
-				width: 50rem;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
+				font-size: 2.4rem;
 			}
 	
 			.btn-pembelian {
@@ -174,4 +270,268 @@
 		}
 	}
 	
+}
+
+@media screen and (max-width: 700px) {
+	.product {
+		.container {
+	
+			.intro {
+				width: 100%;
+			}
+		}
+	}
+
+	.slider {
+		.slide {
+			.testimonial {
+				width: 100%;
+	
+			}
+	
+		}
+	
+		.slider__btn {
+			display: none;
+		}
+	}
+
+	.section__title--testimonials {
+		.section__header {
+			margin-bottom: 3rem;
+		}
+	}
+
+	.hero {
+	
+		.cta {
+
+			.heading {
+				font-size: 8vw;
+			}
+	
+			.btn, 
+			.default {
+				display: none;
+			}
+		}
+
+		.scroll-icon {
+			display: none;
+		}
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+	.product {
+		.container {
+	
+			.intro {
+	
+				h2 {
+					font-size: 4.5rem;
+				}
+	
+				p {
+					font-size: 2.2rem;
+				}
+			}
+
+			.gallery {
+				width: 100%;
+				margin: 0 auto;
+	
+				.product-card {
+					margin-top: 7rem;
+					display: grid;
+					grid-gap: 4rem;
+					grid-template-columns: 30rem;
+
+					.card {
+						.btn-card {
+							font-size: 2.3rem;
+							padding: 1.2rem 4.5rem;
+							margin: 2.5rem auto;
+
+						}
+					}
+
+					.card:nth-child(1) {
+						grid-column: 1 / 2;
+					}
+
+					.card:nth-child(2) {
+						grid-column: 1 / 2;
+					}
+
+					.card:last-child {
+						grid-column: 1 / 2;
+					}
+
+				
+
+				}
+
+			}
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+	.header__toggle {
+		.logo {
+			font-size: 3rem;
+		}
+
+		.menu {
+			.bar1, .bar2, .bar3 {
+				width: 45px;
+				height: 4px;
+				background-color: #333;
+				margin: 10px 0;
+				border-radius: 5px;
+				transition: 0.4s;
+			}
+		}
+	}
+
+	.change {
+		.bar1 {
+			-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+			transform: rotate(-45deg) translate(-9px, 6px);
+		}
+	}
+
+	.hero {
+	
+		.cta {
+
+			.heading {
+				font-size: 9vw;
+			}
+	
+			.btn, 
+			.default {
+				display: none;
+			}
+		}
+
+		.scroll-icon {
+			display: none;
+		}
+	}
+
+	.product {
+		.container {
+	
+			.intro {
+	
+				h2 {
+					font-size: 3.5rem;
+				}
+	
+				p {
+					font-size: 1.5rem;
+				}
+			}
+
+		}
+	}
+
+	.pembelian {
+		padding: 35rem 0;
+		background-color: #fff;
+		position: relative;
+	
+		.container {
+	
+			.header {
+				font-size: 3.4rem;
+			}
+	
+			.text {
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+	.resep {
+		.container {
+
+			.header {
+				font-size: 4rem;
+			}
+	
+			.text {
+				display: none;
+			}
+	
+	
+		}
+	}
+
+	.slider {
+		max-width: 100rem;
+		height: 50rem;
+		margin: -10rem auto 5rem;
+	
+		.slide {
+			.testimonial {
+	
+				.testimonial__text {
+					font-size: 2rem;
+				}
+			}
+	
+		}
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	.product {
+		.container {
+	
+			.intro {
+	
+				h2 {
+					font-size: 4.5rem;
+				}
+	
+				p {
+					font-size: 2.2rem;
+				}
+			}
+
+			.gallery {
+				width: 100%;
+				margin: 0 auto;
+	
+				.product-card {
+					margin-top: 7rem;
+					display: grid;
+					grid-gap: 4rem;
+					grid-template-columns: 30rem;
+
+					.card {
+						margin: 0 2rem;
+
+						.btn-card {
+							font-size: 2.3rem;
+							padding: 1.2rem 4.5rem;
+							margin: 2.5rem auto;
+
+						}
+					}
+				}
+
+			}
+		}
+	}
+
 }
