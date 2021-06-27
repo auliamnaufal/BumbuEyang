@@ -16,7 +16,7 @@ section {
   background-color: #572302;
 
   .cta {
-    width: 70%;
+    min-width: 44rem;
     margin: 13rem 0;
 
     .heading {
@@ -62,17 +62,24 @@ section {
 }
 
 .product {
-  padding: 5rem 0 44rem;
+  padding: 5rem 0 4rem;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .container {
-    width: 86rem;
-    height: 41rem;
-    margin: 0 auto;
+    max-width: 90rem;
+    min-height: 41rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 
     .intro {
       text-align: center;
-      width: 43rem;
+      width: 43%;
       margin: 0 auto;
 
       h2 {
@@ -94,12 +101,12 @@ section {
 
       .product-card {
         margin-top: 7rem;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 25rem);
+        grid-gap: 5rem;
 
         .card {
           height: 39rem;
-          width: fit-content;
           overflow: hidden;
           border-radius: 5px;
           box-shadow: 0 0 0.8rem rgba($color: #000000, $alpha: 0.4);
@@ -107,10 +114,10 @@ section {
           flex-direction: column;
 
           img {
-            transform: scale(1.2);
-            width: 25rem;
-            height: 28rem;
-            object-position: -20px -46px;
+            width: 100%;
+            height: 65%;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
           }
 
           h4 {
@@ -118,7 +125,7 @@ section {
             font-weight: 700;
             font-size: 2.4rem;
             color: #000;
-            margin: 0 auto -1rem;
+            margin: 2rem auto -1rem;
           }
 
           .btn-card {
@@ -144,13 +151,11 @@ section {
     }
 
     .strip {
+      display: block;
       width: 80%;
       height: 1px;
       background-color: #000;
-      position: relative;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 20rem auto 3rem;
     }
   }
 }
@@ -163,51 +168,66 @@ section {
 
   /* IN THE END */
   overflow: hidden;
+
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
+
+    /* TESTIMONIALS */
+    .testimonial {
+      width: 45%;
+      position: relative;
+
+      .testimonial__text {
+        font-size: 1.7rem;
+        margin-bottom: 3.5rem;
+        color: #666;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+
+    &--left {
+      left: 10%;
+      transform: translate(-50%, -50%);
+      border: none;
+      outline: none;
+    }
+    
+    &--right {
+      right: 10%;
+      transform: translate(50%, -50%);
+      border: none;
+      outline: none;
+    }
+  }
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* THIS creates the animation! */
-  transition: transform 1s;
-}
-
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  color: #333;
-  border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 3.25rem;
-  cursor: pointer;
-}
-
-.slider__btn--left {
-  left: 10%;
-  transform: translate(-50%, -50%);
-  border: none;
-  outline: none;
-}
-
-.slider__btn--right {
-  right: 10%;
-  transform: translate(50%, -50%);
-  border: none;
-  outline: none;
-}
 
 .dots {
   position: absolute;
@@ -215,51 +235,32 @@ section {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-}
 
-.dots__dot {
-  border: none;
-  background-color: #c4c4c4;
-  opacity: 0.7;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  margin-right: 1.75rem;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.5s;
-
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
-}
-
-.dots__dot:last-child {
-  margin: 0;
-}
-
-.dots__dot--active {
-  /* background-color: #fff; */
-  background-color: #d02804;
-  opacity: 1;
-}
-
-/* TESTIMONIALS */
-.testimonial {
-  width: 45%;
-  position: relative;
-}
-
-.testimonial__header {
-  font-size: 2.25rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-}
-
-.testimonial__text {
-  font-size: 1.7rem;
-  margin-bottom: 3.5rem;
-  color: #666;
-  text-align: center;
+  .dots__dot {
+    border: none;
+    background-color: #c4c4c4;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s;
+  
+    /* Only necessary when overlying images */
+    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+  
+    &:last-child {
+      margin: 0;
+    }
+    
+    &--active {
+      /* background-color: #fff; */
+      background-color: #d02804;
+      opacity: 1;
+    }
+  }
 }
 
 .section__title--testimonials {

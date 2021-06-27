@@ -7,10 +7,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 3rem;
+		padding: 2rem 6rem;
 
 		.logo {
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 	}
 	
@@ -18,6 +18,7 @@
 		position: absolute;
 		transition: transform 0.3s;
 		transform: translateY(-40rem);
+		border: none;
 	
 		.container {
 			display: flex;
@@ -61,116 +62,48 @@
 	}
 
 	.hero {
-		height: 60vh;
+		height: 70vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	
 		.cta {
+			width: 80%;
+
 			.heading {
 				text-align: center;
 			}
 	
 			.btn, 
-			.default, 
-			.scroll-icon {
+			.default {
 				display: none;
 			}
+		}
+
+		.scroll-icon {
+			display: none;
 		}
 	}
 
 	.product {
-		padding: 5rem 0 44rem;
-		background-color: #fff;
-	
 		.container {
-			width: 86rem;
-			height: 41rem;
-			margin: 0 auto;
 	
 			.intro {
-				text-align: center;
-				width: 43rem;
-				margin: 0 auto;
 	
 				h2 {
-					font-weight: 800;
-					font-size: 4rem;
-					color: #000;
+					font-size: 4.5rem;
 				}
 	
 				p {
-					margin-top: 1rem;
-					font-size: 1.6rem;
-					color: #b0b0b0;
-				}
-			}
-	
-			.gallery {
-				width: 100%;
-				margin: 0 auto;
-	
-				.product-card {
-					margin-top: 7rem;
-					display: flex;
-					justify-content: space-between;
-	
-					.card {
-						height: 39rem;
-						width: fit-content;
-						overflow: hidden;
-						border-radius: 5px;
-						box-shadow: 0 0 0.8rem rgba($color: #000000, $alpha: 0.4);
-						display: flex;
-						flex-direction: column;
-	
-						img {
-							transform: scale(1.2);
-							width: 25rem;
-							height: 28rem;
-							object-position: -20px -46px;
-						}
-	
-						h4 {
-							text-align: center;
-							font-weight: 700;
-							font-size: 2.4rem;
-							color: #000;
-							margin: 0 auto -1rem;
-						}
-	
-						.btn-card {
-							justify-self: center;
-							font-size: 1.5rem;
-							padding: 1.2rem 3.8rem;
-							margin: 3rem auto;
-							cursor: pointer;
-							border-radius: 6px;
-							transition: all 0.3s;
-							color: #fff;
-							border: none;
-							background-color: #d02804;
-							outline: none;
-	
-							&:hover {
-								background-color: #b12000;
-								transform: scale(1.05);
-							}
-						}
-					}
+					font-size: 1.9rem;
 				}
 			}
 	
 			.strip {
-				width: 80%;
-				height: 1px;
-				background-color: #000;
-				position: relative;
-				top: 40%;
-				left: 50%;
-				transform: translate(-50%, -50%);
+				margin: 15rem auto 3rem;
 			}
 		}
 	}
+
 
 }
