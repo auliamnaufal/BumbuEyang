@@ -6,7 +6,7 @@
 	.logo {
 		text-decoration: none;
 		font-family: "Dancing Script", cursive;
-		font-size: 3rem;
+		font-size: 3vw;
 		color: black;
 		white-space: nowrap;
 	}
@@ -24,21 +24,6 @@
     }
   }
 
-}
-
-
-.change {
-	.bar1 {
-		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-		transform: rotate(-45deg) translate(-13px, 9px);
-	}
-	
-	.bar2 {opacity: 0;}
-	
-	.bar3 {
-		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-		transform: rotate(45deg) translate(-13px, -11px);
-	}
 }
 
 .navbar {
@@ -62,7 +47,7 @@
 		.logo {
 			text-decoration: none;
 			font-family: "Dancing Script", cursive;
-			font-size: 3rem;
+			font-size: 3vw;
 			color: black;
 			white-space: nowrap;
 		}
