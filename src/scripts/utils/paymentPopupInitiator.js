@@ -1,17 +1,13 @@
 /* eslint-disable no-tabs */
 const PaymentPopupInitiator = {
-  init({ buyButton, popup }) {
+  init({ buyButton, popup, exitBtn }) {
     buyButton.forEach((button) => {
       button.addEventListener('click', (e) => {
         this._displayPopup(popup, e);
       });
     });
 
-    popup.addEventListener('click', (e) => {
-      this._closePopup(popup, e);
-    });
-
-    document.querySelector('#exitBtn').addEventListener('click', (e) => {
+    exitBtn.addEventListener('click', (e) => {
       this._closePopup(popup, e);
     });
   },

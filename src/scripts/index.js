@@ -12,4 +12,5 @@ const app = new App({
   content: document.querySelector('main'),
   buyButton: document.querySelectorAll('.btn-card'),
   buyPopup: document.querySelector('#popup'),
+  exitBtn: document.querySelector('#exitBtn'),
 });
