@@ -10,4 +10,6 @@ const app = new App({
   button: document.querySelector('#menu'),
   drawer: document.querySelector('.navbar'),
   content: document.querySelector('main'),
+  buyButton: document.querySelectorAll('.btn-card'),
+  buyPopup: document.querySelector('#popup'),
 });
