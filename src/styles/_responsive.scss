@@ -280,6 +280,39 @@
 			}
 		}
 	}
+
+	.pembelian-popup {
+		.card {
+			width: 80%;
+	
+			.img {
+				position: absolute;
+				top: 4%;
+				left: 2%;
+				cursor: pointer;
+				padding: 20px;
+			}
+	
+			.container {
+	
+				.logos {
+	
+					.logo {
+						width: 8vw;
+					}
+				}
+	
+				.text {
+	
+					a {
+						color: rgb(187, 83, 26);
+		
+					}
+				}
+			}
+		}
+	}
+
 	
 }
 
@@ -327,6 +360,38 @@
 
 		.scroll-icon {
 			display: none;
+		}
+	}
+
+	.pembelian-popup {
+		.card {
+	
+			.img {
+				position: absolute;
+				top: 4%;
+				left: 2%;
+				cursor: pointer;
+				padding: 20px;
+			}
+	
+			.container {
+	
+				.logos {
+					grid-gap: 1rem;
+	
+					.logo {
+						width: 10vw;
+					}
+				}
+	
+				.text {
+	
+					a {
+						color: rgb(187, 83, 26);
+		
+					}
+				}
+			}
 		}
 	}
 
@@ -475,6 +540,28 @@
 		}
 	}
 
+	.pembelian-popup {
+		.card {
+			.container {
+				.logos {
+	
+					.logo {
+						min-width: 50px;
+						width: 14vw;
+					}
+				}
+	
+				.text {
+	
+					a {
+						color: rgb(187, 83, 26);
+		
+					}
+				}
+			}
+		}
+	}
+
 }
 
 @media screen and (max-width: 360px) {
@@ -515,6 +602,33 @@
 					}
 				}
 
+			}
+		}
+	}
+
+	.pembelian-popup {
+		.card {
+			.img {
+				top: 2%;
+				left: 5%;
+			}
+
+			.container {
+				.logos {
+	
+					.logo {
+						min-width: 50px;
+						width: 14vw;
+					}
+				}
+	
+				.text {
+	
+					a {
+						color: rgb(187, 83, 26);
+		
+					}
+				}
 			}
 		}
 	}
