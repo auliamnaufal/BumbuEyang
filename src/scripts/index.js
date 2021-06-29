@@ -13,6 +13,7 @@ const app = new App({
   buyButton: document.querySelectorAll('.btn-card'),
   buyPopup: document.querySelector('#popup'),
   exitBtn: document.querySelector('#exitBtn'),
+  links: document.querySelectorAll('.primary-nav li'),
 });
 
 const slider = function () {

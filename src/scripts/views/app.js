@@ -3,7 +3,7 @@ import PaymentPopupInitiator from '../utils/paymentPopupInitiator';
 
 class App {
   constructor({
-    button, drawer, content, buyButton, buyPopup, exitBtn,
+    button, drawer, content, buyButton, buyPopup, exitBtn, links,
   }) {
     this._button = button;
     this._drawer = drawer;
@@ -11,6 +11,7 @@ class App {
     this._buyButton = buyButton;
     this._buyPopup = buyPopup;
     this._exitBtn = exitBtn;
+    this._links = links;
 
     this._initialAppShell();
     this._initialPaymentPopup();
@@ -21,6 +22,7 @@ class App {
       button: this._button,
       drawer: this._drawer,
       content: this._content,
+      links: this._links,
     });
   }
 
