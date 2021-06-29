@@ -4,7 +4,7 @@ import '../styles/main.scss';
 
 import App from './views/app';
 
-console.log('Hello Coders!');
+import CONFIG from './globals/config';
 
 const app = new App({
   button: document.querySelector('#menu'),
@@ -14,6 +14,7 @@ const app = new App({
   buyPopup: document.querySelector('#popup'),
   exitBtn: document.querySelector('#exitBtn'),
   links: document.querySelectorAll('.primary-nav li'),
+  buyMethod: document.querySelectorAll('.popup-logo'),
 });
 
 const slider = function () {
