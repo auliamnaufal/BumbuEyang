@@ -25,7 +25,7 @@ const PaymentPopupInitiator = {
 
     buyMethod.forEach((method) => {
       method.addEventListener('click', () => {
-        console.log(method.ariaLabel);
+        this._openBuyMethod(identifier, method.ariaLabel);
       });
     });
 
@@ -38,17 +38,25 @@ const PaymentPopupInitiator = {
   },
 
   _openBuyMethod(identifier, buyMethod) {
-    buyMethod.forEach((method) => {
-      switch (method.ariaLabel) {
-        case 'whatsapp':
-          window.open(CONFIG.BASE_WA_URL, '_blank');
+    const text = 'text otomatis dari website bumbu eyang, anda membeli bumbu ';
+    const encodedText = text.split(' ').join('%20');
 
-          break;
+    switch (buyMethod) {
+      case 'whatsapp':
+        window.open(`${CONFIG.BASE_WA_URL}${encodedText}${identifier}`, '_blank');
+        break;
 
-        default:
-          break;
-      }
-    });
+      case 'tokopedia':
+        window.open('https://www.tokopedia.com/bumbueyang', '_blank');
+        break;
+
+      case 'shopee':
+        window.open('https://shopee.co.id/shop/290263518/search?originalCategoryId=100808&page=0', '_blank');
+        break;
+
+      default:
+        break;
+    }
   },
 
 };
