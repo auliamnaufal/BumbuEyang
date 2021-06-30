@@ -52,6 +52,7 @@
 						padding: 0;
 						margin-top: 2rem;
 						min-height: 44px;
+						min-width: 20rem;
 
 						&:first-child {
 							margin-top: 0;
@@ -59,7 +60,7 @@
 	
 						a {
 							font-weight: 700;
-							font-size: 2.5rem;
+							font-size: 2.2rem;
 							color: #0c0c0c;
 						}
 					}
@@ -83,6 +84,7 @@
 
 			.heading {
 				text-align: center;
+				font-size: 8vw;
 			}
 	
 			.btn, 
@@ -160,9 +162,8 @@
 	.dots {
 	
 		.dots__dot {
-			padding: 1rem;
-			height: 2rem;
-			width: 2rem;
+			height: 1rem;
+			width: 1rem;
 			margin-right: 2rem;
 		}
 	}
@@ -327,57 +328,6 @@
 
 }
 
-@media screen and (max-width: 660px) {
-	.product {
-		.container {
-	
-			.intro {
-	
-				h2 {
-					font-size: 4.5rem;
-				}
-	
-				p {
-					font-size: 2.2rem;
-				}
-			}
-
-			.gallery {
-				width: 100%;
-				margin: 0 auto;
-	
-				.product-card {
-					margin-top: 7rem;
-					display: grid;
-					grid-gap: 4rem;
-					grid-template-columns: 30rem;
-
-					.card {
-						.btn-card {
-							font-size: 2.3rem;
-							padding: 1.2rem 4.5rem;
-							margin: 2.5rem auto;
-
-						}
-					}
-
-					.card:nth-child(1) {
-						grid-column: 1 / 2;
-					}
-
-					.card:nth-child(2) {
-						grid-column: 1 / 2;
-					}
-
-					.card:last-child {
-						grid-column: 1 / 2;
-					}
-				}
-			}
-		}
-	}
-}
-
 @media screen and (max-width: 460px) {
 
 	.header__toggle {
@@ -411,14 +361,46 @@
 			.intro {
 	
 				h2 {
-					font-size: 3.5rem;
+					font-size: 4.5rem;
 				}
 	
 				p {
-					font-size: 1.5rem;
+					font-size: 2.2rem;
 				}
 			}
 
+			.gallery {
+				width: 100%;
+				margin: 0 auto;
+	
+				.product-card {
+					margin-top: 7rem;
+					display: grid;
+					grid-gap: 4rem;
+					grid-template-columns: 25rem;
+
+					.card {
+						.btn-card {
+							font-size: 2rem;
+							padding: 1rem 4.3rem;
+							margin: 2.8rem auto;
+
+						}
+					}
+
+					.card:nth-child(1) {
+						grid-column: 1 / 2;
+					}
+
+					.card:nth-child(2) {
+						grid-column: 1 / 2;
+					}
+
+					.card:last-child {
+						grid-column: 1 / 2;
+					}
+				}
+			}
 		}
 	}
 
