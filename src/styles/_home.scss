@@ -3,7 +3,7 @@ section {
 }
 
 .hero {
-  height: 85vh;
+  height: 95vh;
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.529),
@@ -17,7 +17,7 @@ section {
 
   .cta {
     max-width: 100rem;
-    margin: 13rem 3rem;
+    margin: 16vh 3vw;
 
     .heading {
       font-weight: 800;
@@ -55,7 +55,7 @@ section {
 
   .scroll-icon {
     position: absolute;
-    bottom: 1%;
+    bottom: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -89,9 +89,9 @@ section {
       }
 
       p {
-        margin-top: 1rem;
-        font-size: 1.6rem;
-        color: #b0b0b0;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        color: #909090;
       }
     }
 
@@ -274,7 +274,7 @@ section {
 }
 
 .resep {
-  height: 70rem;
+  height: 100vh;
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.529),
@@ -355,7 +355,7 @@ section {
       font-weight: 800;
       text-align: center;
       color: #000;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
 
     .text {
