@@ -17,6 +17,7 @@ const PaymentPopupInitiator = {
     exitBtn.addEventListener('click', (e) => {
       this._closePopup(popup, e);
       location.reload();
+      e.stopPropagation();
     });
   },
 
@@ -41,7 +42,6 @@ const PaymentPopupInitiator = {
   _openBuyMethod(identifier, buyMethod) {
     const text = 'Halo Bumbu Eyang, saya ingin pesan bumbu ';
     const encodedText = text.split(' ').join('%20');
-
     if (buyMethod === 'whatsapp') {
       window.open(`${CONFIG.BASE_WA_URL}${encodedText}${identifier}`, '_blank');
     }
