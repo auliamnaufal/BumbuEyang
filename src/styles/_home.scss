@@ -3,7 +3,7 @@ section {
 }
 
 .hero {
-  height: 115vh;
+  height: 85vh;
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.529),
@@ -17,7 +17,7 @@ section {
 
   .cta {
     max-width: 100rem;
-    margin: 13rem 4rem;
+    margin: 13rem 3rem;
 
     .heading {
       font-weight: 800;
@@ -79,7 +79,7 @@ section {
 
     .intro {
       text-align: center;
-      width: 43%;
+      width: 50%;
       margin: 0 auto;
 
       h2 {
@@ -355,12 +355,12 @@ section {
       font-weight: 800;
       text-align: center;
       color: #000;
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     }
 
     .text {
       font-weight: 400;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #909090;
       text-align: center;
       margin-bottom: 7.5rem;
@@ -369,7 +369,7 @@ section {
     .logos {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     .btn-pembelian {
@@ -440,8 +440,8 @@ footer {
 
     .img {
       position: absolute;
-      top: 8%;
-      left: 5%;
+      top: 2%;
+      left: 2%;
       cursor: pointer;
       padding: 20px;
     }
@@ -470,10 +470,10 @@ footer {
 
         .logo {
           box-sizing: border-box;
-          min-width: 70px;
+          min-width: 80px;
           height: auto;
           width: 6rem;
-          padding: 1rem;
+          padding: 1.2rem;
           border-radius: 15px;
           box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
           transition: all 0.3s;
