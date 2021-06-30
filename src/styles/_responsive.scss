@@ -328,6 +328,36 @@
 
 }
 
+@media screen and (max-width: 640px) {
+
+	.product {
+		.container {
+			.gallery {
+	
+				.product-card {
+					grid-template-columns: repeat(4, 10rem);
+				}
+
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 560px) {
+	.product {
+		.container {
+			.gallery {
+	
+				.product-card {
+					grid-template-columns: repeat(4, 8rem);
+				}
+
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 460px) {
 
 	.header__toggle {

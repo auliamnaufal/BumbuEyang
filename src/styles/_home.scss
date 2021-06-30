@@ -157,6 +157,7 @@ section {
       height: 1px;
       background-color: #000;
       margin: 20rem auto 3rem;
+      opacity: .5;
     }
   }
 }
@@ -471,7 +472,7 @@ footer {
           box-sizing: border-box;
           min-width: 70px;
           height: auto;
-          width: 6vw;
+          width: 6rem;
           padding: 1rem;
           border-radius: 15px;
           box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
