@@ -11,11 +11,7 @@ const app = new App({
   button: document.querySelector('#menu'),
   drawer: document.querySelector('.navbar'),
   content: document.querySelector('main'),
-  buyButton: document.querySelectorAll('.btn-card'),
-  buyPopup: document.querySelector('#popup'),
-  exitBtn: document.querySelector('#exitBtn'),
   links: document.querySelectorAll('.primary-nav li'),
-  buyMethod: document.querySelectorAll('.popup-logo'),
 });
 
 window.addEventListener('hashchange', () => {

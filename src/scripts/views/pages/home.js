@@ -157,11 +157,9 @@ const Home = {
   },
 
   async afterRender() {
-    console.log('home rendered');
-
     PaymentPopupInitiator.init({
       buyButton: document.querySelectorAll('.btn-card'),
-      buyPopup: document.querySelector('#popup'),
+      popup: document.querySelector('#popup'),
       exitBtn: document.querySelector('#exitBtn'),
       buyMethod: document.querySelectorAll('.popup-logo'),
     });
