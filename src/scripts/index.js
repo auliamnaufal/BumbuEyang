@@ -6,6 +6,11 @@ import './components/footer';
 import './components/paymentPopup';
 import './components/drawer';
 import './components/headerToggle';
+import './components/sliderSection';
+import './components/productSection';
+import './components/buyingSection';
+import './components/recipeSection';
+import './components/heroSection';
 
 import App from './views/app';
 
