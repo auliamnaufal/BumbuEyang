@@ -2,6 +2,9 @@ import 'regenerator-runtime';
 
 import '../styles/main.scss';
 
+import './components/footer';
+import './components/paymentPopup';
+
 import App from './views/app';
 
 const app = new App({
