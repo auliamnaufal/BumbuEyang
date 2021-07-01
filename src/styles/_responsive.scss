@@ -2,7 +2,7 @@
 
 	.header__toggle {
 		background: #f3ede7;
-		z-index: 1999;
+		z-index: 9;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -17,11 +17,11 @@
 		}
 
 		.menu.active .bar:nth-child(1) {
-				transform: translateY(12px) rotate(45deg);
+				transform: translateY(10px) rotate(45deg);
 		}
 
 		.menu.active .bar:nth-child(3) {
-				transform: translateY(-12px) rotate(-45deg);
+				transform: translateY(-9px) rotate(-45deg);
 		}
 	}
 	
@@ -30,6 +30,7 @@
 		transition: transform 0.3s;
 		transform: translateY(-40rem);
 		border: none;
+		padding: 1.6rem;
 	
 		.container {
 			display: flex;
@@ -60,7 +61,7 @@
 	
 						a {
 							font-weight: 700;
-							font-size: 2.2rem;
+							font-size: 2rem;
 							color: #0c0c0c;
 						}
 					}
@@ -362,7 +363,7 @@
 
 	.header__toggle {
 		.logo {
-			font-size: 8vw;
+			font-size: 7vw;
 		}
 	}
 
@@ -389,13 +390,14 @@
 		.container {
 	
 			.intro {
+				width: 80%;
 	
 				h2 {
-					font-size: 4.5rem;
+					font-size: 3.4rem;
 				}
 	
 				p {
-					font-size: 1.75rem;
+					font-size: 1.7rem;
 				}
 			}
 
@@ -411,9 +413,9 @@
 
 					.card {
 						.btn-card {
-							font-size: 2rem;
-							padding: 1rem 4.3rem;
-							margin: 2.8rem auto;
+							font-size: 1.6rem;
+							padding: 1rem 4rem;
+							margin: 3rem auto;
 
 						}
 					}
@@ -440,6 +442,7 @@
 		position: relative;
 	
 		.container {
+			width: 80%;
 	
 			.header {
 				font-size: 3.4rem;
@@ -447,6 +450,11 @@
 	
 			.text {
 				font-size: 1.7rem;
+			}
+
+			.btn-pembelian {
+				font-size: 1.3rem;
+				padding: 1.2rem 3rem;
 			}
 		}
 	}
@@ -460,6 +468,12 @@
 	
 			.text {
 				display: none;
+			}
+
+			.btn-resep {
+				font-size: 1.3rem;
+				padding: 1rem 3rem;
+				margin-top: 6rem;
 			}
 	
 	
@@ -475,7 +489,7 @@
 			.testimonial {
 	
 				.testimonial__text {
-					font-size: 2rem;
+					font-size: 1.8rem;
 				}
 			}
 	

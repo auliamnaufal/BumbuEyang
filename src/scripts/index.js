@@ -4,8 +4,6 @@ import '../styles/main.scss';
 
 import App from './views/app';
 
-import CONFIG from './globals/config';
-
 const app = new App({
   button: document.querySelector('#menu'),
   drawer: document.querySelector('.navbar'),
