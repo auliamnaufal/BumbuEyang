@@ -2,6 +2,15 @@ section {
   padding: 2rem 5rem;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;    /* Footer height */
+}
+
 .hero {
   height: 95vh;
   background-image: linear-gradient(
@@ -399,8 +408,12 @@ section {
 }
 
 footer {
-  padding: 3rem 0;
   background-color: #f3ede7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;            /* Footer height */
+  padding: .5rem 0;
 
   h2 {
     font-family: "Dancing Script", cursive;
