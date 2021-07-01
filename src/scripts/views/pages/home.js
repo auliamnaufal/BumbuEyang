@@ -43,7 +43,7 @@ const Home = {
       slides.forEach((_, i) => {
         dotContainer.insertAdjacentHTML(
           'beforeend',
-          `<button class="dots__dot" data-slide="${i}"></button>`,
+          `<button class="dots__dot" aria-label="slide button" data-slide="${i}"></button>`,
         );
       });
     };

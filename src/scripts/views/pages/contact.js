@@ -14,7 +14,7 @@ const Contact = {
               Punya pertanyaan seputar produk Bumbu Eyang? Hubungi kami melalui
               nomor dibawah ini!
             </p>
-            <h6>+62XXXXXXXXXX</h6>
+            <h2>+62XXXXXXXXXX</h2>
           </div>
 
           <div class="contact-cara _2">
@@ -31,7 +31,7 @@ const Contact = {
   },
 
   async afterRender() {
-    console.log('rendered');
+    console.log('');
   },
 
 };
