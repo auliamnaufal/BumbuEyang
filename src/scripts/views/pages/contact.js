@@ -31,7 +31,7 @@ const Contact = {
   },
 
   async afterRender() {
-    console.log('');
+    document.querySelector('.contact-body');
   },
 
 };
