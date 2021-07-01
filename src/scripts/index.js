@@ -4,6 +4,8 @@ import '../styles/main.scss';
 
 import './components/footer';
 import './components/paymentPopup';
+import './components/drawer';
+import './components/headerToggle';
 
 import App from './views/app';
 
