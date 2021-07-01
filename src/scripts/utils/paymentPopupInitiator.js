@@ -6,6 +6,7 @@ const PaymentPopupInitiator = {
     buyButton, popup, exitBtn, buyMethod,
   }) {
     let btnIdentifier;
+    console.log(popup);
 
     buyButton.forEach((button) => {
       button.addEventListener('click', (e) => {

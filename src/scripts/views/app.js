@@ -1,5 +1,7 @@
 import DrawerInitiator from '../utils/drawerInitiator';
 import PaymentPopupInitiator from '../utils/paymentPopupInitiator';
+import UrlParser from '../routes/url-parser';
+import routes from '../routes/routes';
 
 class App {
   constructor({
@@ -34,6 +36,13 @@ class App {
       exitBtn: this._exitBtn,
       buyMethod: this._buyMethod,
     });
+  }
+
+  async renderPage() {
+    const url = UrlParser.parseActiveUrlWithCombiner();
+    const page = routes[url];
+    this._content.innerHTML = await page.render();
+    await page.afterRender();
   }
 }
 
