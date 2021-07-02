@@ -6,7 +6,8 @@
   "scripts": {
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint ./src --fix"
+    "lint": "eslint ./src --fix",
+    "viewBuild": "http-server dist -a localhost -p 8000"
   },
   "repository": {
     "type": "git",
