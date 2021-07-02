@@ -56,16 +56,21 @@
 
       .btn-card {
         justify-self: center;
-        font-size: 1.5rem;
         padding: 1.2rem 3.8rem;
         margin: 3rem auto;
         cursor: pointer;
         border-radius: 6px;
         transition: all 0.3s;
-        color: #fff;
         border: none;
         background-color: #d02804;
         outline: none;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.5rem;
+
+        }
 
         &:hover {
           background-color: #b12000;

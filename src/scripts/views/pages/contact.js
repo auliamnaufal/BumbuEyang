@@ -1,6 +1,11 @@
 /* eslint-disable no-tabs */
+import CONFIG from '../../globals/config';
+
 const Contact = {
   async render() {
+    const contactText = 'Halo Bumbu Eyang, saya ingin pesan/menanyakan informasi seputar Bumbu Eyang nih!';
+    const encodedContactText = contactText.split(' ').join('%20');
+
     return `
 			<div class="contact-header">
 				<h1 class="heading">Hubungi Kami</h1>
@@ -23,7 +28,7 @@ const Contact = {
               Tidak memiliki waktu untuk telfon? Anda dapat menghubungi kami via
               chat Whatsapp disini!
             </p>
-            <button class="btn-card" id="gulai">Contact</button>
+            <button class="btn-card" id="gulai"><a href="${CONFIG.BASE_WA_URL}${encodedContactText}" target="_blank" rel="noopener">Contact</a></button>
           </div>
         </div>
       </div>
