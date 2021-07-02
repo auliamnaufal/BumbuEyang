@@ -32,7 +32,7 @@ class BuyingSection extends HTMLElement {
 						<img src="./public/logo/house.svg" alt="house logo" class="logo" />
 					</div>
 					<button class="btn-pembelian">
-						<a href="#">PELAJARI LEBIH LANJUT</a>
+						<a href="#/buying-procedure">PELAJARI LEBIH LANJUT</a>
 					</button>
 				</div>
 			</section>

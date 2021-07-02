@@ -21,10 +21,10 @@ const app = new App({
   links: document.querySelectorAll('.primary-nav li'),
 });
 
-// window.addEventListener('hashchange', () => {
-//   app.renderPage();
-// });
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
 
-// window.addEventListener('load', () => {
-//   app.renderPage();
-// });
+window.addEventListener('load', () => {
+  app.renderPage();
+});
