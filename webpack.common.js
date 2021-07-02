@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
-const imageminPngquant = require('imagemin-pngquant');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
@@ -51,18 +50,6 @@ module.exports = {
         },
       ],
     }),
-    new ImageminWebpackPlugin({
-      plugins: [
-        ImageminMozjpeg({
-          quality: 40,
-          progressive: true,
-        }),
-        imageminPngquant({
-          speed: 10,
-          quality: [0.1, 0.2],
-        }),
-      ],
-    }),
     new WebpackPwaManifest({
       name: 'Bumbu Eyang',
       short_name: 'Bumbu Eyang',
@@ -74,12 +61,13 @@ module.exports = {
       orientation: 'portrait',
       start_url: '/index.html',
       inject: true,
+      fingerprints: true,
       ios: true,
       includeDirectory: true,
-
+      publicPath: './',
       icons: [
         {
-          src: path.resolve(__dirname, 'src/public/logo/BE_favicon.png'),
+          src: path.resolve('src/public/logo/BE_favicon.png'),
           sizes: [96, 128, 192, 256, 384, 512],
           type: 'image/png',
           purpose: 'any maskable',
@@ -87,16 +75,24 @@ module.exports = {
           ios: true,
         },
         {
-          src: path.resolve(__dirname, 'src/public/logo/BE_favicon.png'),
+          src: path.resolve('src/public/logo/BE_favicon.png'),
           size: '1024x1024',
           destination: path.join('icons', 'ios'),
           ios: 'startup',
         },
         {
-          src: path.resolve(__dirname, 'src/public/logo/BE_favicon.png'),
+          src: path.resolve('src/public/logo/BE_favicon.png'),
           size: '1024x1024',
           purpose: 'maskable',
         },
+      ],
+    }),
+    new ImageminWebpackPlugin({
+      plugins: [
+        ImageminMozjpeg({
+          quality: 40,
+          progressive: true,
+        }),
       ],
     }),
   ],
