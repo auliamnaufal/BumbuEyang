@@ -26,10 +26,7 @@ class SliderSection extends HTMLElement {
 					<div class="slide">
 						<div class="testimonial">
 							<blockquote class="testimonial__text">
-								“Yang ajaibnya adalah.. si adek yang seumur-umur gak doyan
-								rendang sekarang bisa makan sampai dua piring! Alhamdulillah
-								banget kan.. secara si adek abis sakit jadi makannya lagi agak
-								susah.”
+								“Ngerendang pertama kalii pake bumbu eyang, maknyuuss enyaak Ahlamdulillah paksu suka bgt.”
 							</blockquote>
 						</div>
 					</div>
@@ -37,10 +34,7 @@ class SliderSection extends HTMLElement {
 					<div class="slide">
 						<div class="testimonial">
 							<blockquote class="testimonial__text">
-								“Yang ajaibnya adalah.. si adek yang seumur-umur gak doyan
-								rendang sekarang bisa makan sampai dua piring! Alhamdulillah
-								banget kan.. secara si adek abis sakit jadi makannya lagi agak
-								susah.”
+								“Bumbunya enak,,rempahnya juga berasa banget,,terutama daun kunyitnya,,bikin rasa rendang lebih otentik dan ga pasaran,, jadi inget rasa rendang di pekanbaru,,rendang jengkol pake teri.”
 							</blockquote>
 						</div>
 					</div>
