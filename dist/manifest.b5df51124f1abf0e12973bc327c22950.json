@@ -54,6 +54,6 @@
   "display": "standalone",
   "start_url": "/index.html",
   "description": "Bumbu yang sehat dan kaya akan rempah",
-  "background_color": "#fff2",
+  "background_color": "#fff",
   "theme_color": "#f3ede7"
 }
