@@ -58,7 +58,7 @@ module.exports = {
         }),
         imageminPngquant({
           speed: 10,
-          quality: [0.3, 0.5],
+          quality: [0.1, 0.2],
         }),
       ],
     }),
