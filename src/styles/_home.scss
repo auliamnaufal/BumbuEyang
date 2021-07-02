@@ -70,6 +70,65 @@ section {
   }
 }
 
+.howtobuy {
+  height: 60vh;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./public/images/hero_img-2.png");
+
+  background-size: cover;
+  background-position: top;
+  background-color: #572302;
+  display: grid;
+  place-content: center;
+
+  .cta {
+
+
+    .heading {
+      font-weight: 800;
+      font-size: 5vw;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+  }
+
+}
+
+.procedure {
+  padding: 6rem 15rem;
+
+  &__item {
+    margin-top: 6rem;
+    h2 {
+      font-weight: 800;
+      font-size: 3.2rem;
+    }
+
+    ol {
+      margin-top: 2rem;
+      li {
+        margin-top: 1rem;
+        font-weight: 400;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.strip {
+  display: block;
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+  margin: 5rem auto 3rem;
+  opacity: .5;
+}
+
 .product {
   padding: 5rem 0 4rem;
   background-color: #fff;

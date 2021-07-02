@@ -13,7 +13,7 @@ class HeroSection extends HTMLElement {
 						<a href="#product"> LIHAT PRODUK</a>
 					</button>
 				</div>
-				<a href="#product" aria-label="scroll to content>
+				<a href="#product" aria-label="scroll to content">
 					<img
 						class="scroll-icon"
 						src="./public/logo/scroll-down.svg"
