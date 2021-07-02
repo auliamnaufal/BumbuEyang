@@ -38,7 +38,7 @@ class PaymentPopup extends HTMLElement {
 							<img src="./public/logo/house.svg" alt="house logo" class="logo" />
 						</div>
 						<p class="text">
-							Butuh bantuan? klik <a id="pelajari" href="#">disini</a> untuk
+							Butuh bantuan? klik <a id="pelajari" href="#/buying-procedure">disini</a> untuk
 							informasi lebih lanjut
 						</p>
 					</div>
