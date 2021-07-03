@@ -23,7 +23,6 @@ const PaymentPopupInitiator = {
 
   _displayPopup(popup, event, identifier, buyMethod) {
     popup.classList.remove('close');
-    console.log(identifier);
 
     buyMethod.forEach((method) => {
       method.addEventListener('click', () => {

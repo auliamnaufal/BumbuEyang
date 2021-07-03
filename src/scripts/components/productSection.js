@@ -38,7 +38,7 @@ class ProductSection extends HTMLElement {
 									src="./public/images/bumbu_biang-img.jpeg"
 									alt="foto bumbu gulai"
 								/>
-								<h3>Bumbu biang</h3>
+								<h3>Bumbu Biang</h3>
 								<button class="btn-card" aria-label="biang">Beli</button>
 							</div>
 						</div>
