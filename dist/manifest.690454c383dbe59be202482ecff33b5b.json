@@ -1,48 +1,48 @@
 {
   "icons": [
     {
-      "src": "./icon_1024x1024.17768184c30c5419a186aa0d1592bcf5.png",
+      "src": "./icon_1024x1024.d633976896af07790eee9da93a1b68d2.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "./icons/ios/icon_1024x1024.17768184c30c5419a186aa0d1592bcf5.png",
+      "src": "./icons/ios/icon_1024x1024.d633976896af07790eee9da93a1b68d2.png",
       "sizes": "1024x1024",
       "type": "image/png"
     },
     {
-      "src": "./icons/ios/icon_512x512.fd2195e4aad85174ad4cec7ccba53890.png",
+      "src": "./icons/ios/icon_512x512.68f5a62db875062a80df94d05ad7fb66.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icons/ios/icon_384x384.7bbeb373b2b6df88bbd325190eefcbfd.png",
+      "src": "./icons/ios/icon_384x384.8e2bf95e174670c4ac25ee68f3735b33.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icons/ios/icon_256x256.40ffd69e3d3770424f222e853339cfbc.png",
+      "src": "./icons/ios/icon_256x256.479af6d8c487db9c8918e5cff094aa3e.png",
       "sizes": "256x256",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icons/ios/icon_192x192.851b5f3ddd95c0b036761b0bca13c910.png",
+      "src": "./icons/ios/icon_192x192.eed6913a3a3839597a8c8da7dbf9f9bb.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icons/ios/icon_128x128.8c33865b07a737fd64af856ded929988.png",
+      "src": "./icons/ios/icon_128x128.855d4597732251b65c1ea9e3ade7c903.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icons/ios/icon_96x96.c825b40eebd74dadc50a0391063ffc9b.png",
+      "src": "./icons/ios/icon_96x96.9ef59a1f1fc9bd7c246420211cd95fd1.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any maskable"
